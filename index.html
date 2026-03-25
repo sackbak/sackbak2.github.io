@@ -1,117 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seokbin Kang | Logistics Strategy & Performance Specialist</title>
+    <title>강석빈 | CJ Logistics Strategy & New Business Manager</title>
     <style>
-        /* 기본 스타일 정의 - 전략: 깔끔하고 신뢰감 있는 비즈니스 톤 앤 매너 */
-        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.8; color: #333; margin: 0; background-color: #f9f9f9; }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        
-        /* 헤더/프로필 섹션 - 전략: 핵심 아이덴티티 시각적 강조 */
-        header { text-align: center; padding: 80px 20px 60px; background: linear-gradient(135deg, #0056b3 0%, #003366 100%); color: white; border-bottom: none; position: relative; }
-        .profile-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 5px solid white; box-shadow: 0 4px 15px rgba(0,0,0,0.2); background: white; margin-top: -120px; }
-        header .content-container { position: relative; padding-top: 10px; }
-        h1 { font-size: 2.8em; margin: 10px 0 5px; font-weight: 700; letter-spacing: -1px; }
-        .subtitle { color: #80cfff; font-weight: 500; font-size: 1.2em; margin-bottom: 25px; }
-        .contact-links { font-size: 0.9em; margin-top: 20px; }
-        .contact-links a { color: #80cfff; text-decoration: none; margin: 0 10px; }
-        .contact-links a:hover { text-decoration: underline; }
-        
-        /* 상세 섹션 스타일 - 전략: 정보의 구조화(Semantic HTML) */
-        section { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.05); margin-bottom: 35px; }
-        h2 { border-left: 5px solid #0056b3; padding-left: 15px; color: #1a1a1a; margin-top: 0; font-size: 1.5em; text-transform: uppercase; letter-spacing: 1px; }
-        
-        /* 리스트 및 상세 내용 스타일 */
-        ul { list-style-type: none; padding: 0; }
-        .experience-item, .education-item { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
-        .experience-item:last-child, .education-item:last-child { border-bottom: none; }
-        .date { color: #888; font-size: 0.9em; font-weight: 500; display: block; margin-bottom: 3px; }
-        .company, .university { font-weight: bold; font-size: 1.2em; color: #003366; }
-        .role { color: #555; font-style: italic; margin-bottom: 10px; display: block; }
-        .details-list { list-style-type: disc; padding-left: 20px; color: #555; font-size: 0.95em; }
-        .details-list li { margin-bottom: 8px; }
-
-        /* footer 섹션 - 전략: 전문성 마무리 및 저작권 명시 */
-        footer { text-align: center; color: #999; font-size: 0.85em; padding: 30px 0; border-top: 1px solid #eee; margin-top: 50px; }
+        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; line-height: 1.8; color: #333; margin: 0; background-color: #f4f7f9; }
+        .container { max-width: 850px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; padding: 100px 20px 60px; background: linear-gradient(135deg, #002d5b 0%, #004a8f 100%); color: white; }
+        .profile-img { width: 170px; height: 170px; border-radius: 50%; object-fit: cover; border: 4px solid rgba(255,255,255,0.8); box-shadow: 0 10px 25px rgba(0,0,0,0.2); margin-bottom: 25px; background: #fff; }
+        h1 { font-size: 2.6em; margin: 0; font-weight: 700; letter-spacing: -1px; }
+        .subtitle { color: #a3d2ff; font-weight: 500; font-size: 1.25em; margin: 10px 0 25px; }
+        .contact-links a { color: #fff; text-decoration: none; margin: 0 12px; font-size: 0.95em; opacity: 0.9; transition: 0.3s; }
+        .contact-links a:hover { opacity: 1; border-bottom: 1px solid #fff; }
+        section { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        h2 { color: #002d5b; font-size: 1.6em; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 15px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px; }
+        .item { margin-bottom: 35px; }
+        .date { color: #0056b3; font-weight: 600; font-size: 0.9em; display: block; margin-bottom: 5px; }
+        .main-title { font-weight: 700; font-size: 1.3em; color: #1a1a1a; }
+        .sub-title { color: #666; font-style: italic; font-size: 1.1em; display: block; margin: 5px 0 12px; }
+        .details-list { list-style: none; padding-left: 0; }
+        .details-list li { position: relative; padding-left: 20px; color: #444; margin-bottom: 10px; font-size: 0.95em; }
+        .details-list li::before { content: "•"; position: absolute; left: 0; color: #0056b3; font-weight: bold; }
+        .skill-tag { background: #eef4fb; color: #0056b3; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 600; display: inline-block; margin: 5px; }
+        .cert-tag { background: #fdf2f2; color: #d32f2f; padding: 4px 10px; border-radius: 4px; font-size: 0.8em; margin-right: 5px; font-weight: bold; }
+        footer { text-align: center; color: #888; font-size: 0.9em; padding: 40px 0; }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="container" style="background:none; border:none; color:inherit;">
-        <div class="content-container">
-            <img src="profile.jpg" alt="Seokbin Kang" class="profile-img">
-            <h1>Seokbin Kang</h1>
-            <p class="subtitle">Logistics Strategy & Performance Specialist | Senior Specialist, Strategic Planning Dept.</p>
-            <p style="max-width:600px; margin:0 auto; font-size:1.1em; line-height:1.6;">9 years of experience driving business strategy, performance management, and data-driven optimization at CJ Logistics.</p>
-            <div class="contact-links">
-                <a href="mailto:sackbak1@gmail.com">Email</a> |
-                <a href="https://www.linkedin.com/in/seokbin-kang-b0b89814a" target="_blank">LinkedIn</a> | <a href="https://github.com/sackbak1">GitHub</a>
-            </div>
+    <div class="container" style="background:none; box-shadow:none; padding:0;">
+        <img src="profile.jpg" alt="강석빈" class="profile-img">
+        <h1>강석빈 (Seokbin Kang)</h1>
+        <p class="subtitle">Strategy & New Business Manager | CJ Logistics CSO Office</p>
+        <div class="contact-links">
+            <a href="mailto:sackbak1@naver.com">Email</a>
+            <a href="https://www.linkedin.com/in/seokbin-kang-b0b89814a" target="_blank">LinkedIn</a>
+            <a href="https://github.com/sackbak1" target="_blank">GitHub</a>
         </div>
     </div>
 </header>
 
 <div class="container">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>A seasoned logistics strategy professional with a proven track record of 9 years at CJ Logistics. Currently pursuing an MS in Information Management at KAIST to integrate practical logistics expertise with advanced data analytics and AI. Passionate about designing the next generation of intelligent, efficient supply chains and optimizing strategic investment decisions through data-driven insights.</p>
+    <section id="summary">
+        <h2>Professional Summary</h2>
+        <p>
+            물류 및 사업 기획 분야에서 8년 이상의 경력을 보유한 전략 및 신사업 매니저입니다. [cite: 19, 29] 
+            현재 CJ대한통운 CSO(Strategy Planning) 조직에서 '0 to 1'프로젝트를 리딩하며, 이종 산업 결합(모빌리티, IT 플랫폼)을 통한 데이터 기반 비즈니스 모델 발굴에 주력하고 있습니다. [cite: 17, 20, 22, 23]
+        </p>
     </section>
 
     <section id="experience">
-        <h2>Professional Experience</h2>
-        <ul class="experience-list">
-            <li class="experience-item">
-                <span class="date">Jan 2016 – Present (9 years)</span>
-                <span class="company">CJ Logistics, Strategic Planning Dept.</span><br>
-                <span class="role">Senior Specialist / Performance Management & Strategic Analysis</span>
-                <ul class="details-list">
-                    <li>Led strategic investment review and business feasibility analysis for major infrastructure projects, contributing to enhanced capital allocation.</li>
-                    <li>Developed and managed 전사(Global) KPIs and performance management systems, driving alignment with long-term business goals.</li>
-                    <li>Participated in key strategic projects, including M&A due diligence and integration planning, and Fleet Management System (FMS) optimization strategies.</li>
-                </ul>
-            </li>
-        </ul>
+        <h2>Experience</h2>
+        <div class="item">
+            <span class="date">2024 - Present</span>
+            <span class="main-title">CJ Logistics (CSO)</span>
+            <span class="sub-title">Manager, New Business Strategy & Development</span>
+            <ul class="details-list">
+                <li>당근 하이퍼로컬 생활물류 서비스 **'바로구매'** 도입 및 고도화 (2025) [cite: 31]</li>
+                <li>풀필먼트 패키징 활용 광고 사업 론칭 및 수익화 모델 구축 (2025) [cite: 32]</li>
+                <li>화물 차량 활용 디지털 사이니지 광고 실증 프로젝트 리딩 (2024-2025) [cite: 33]</li>
+            </ul>
+        </div>
+        <div class="item">
+            <span class="date">2022 - 2024</span>
+            <span class="main-title">CJ Logistics</span>
+            <span class="sub-title">Assistant Manager, New Business Strategy & Development</span>
+            <ul class="details-list">
+                <li>기아(KIA) 공동개발 **친환경 물류 PBV** 전략 수립 및 사업화 (2022-2023) [cite: 38]</li>
+                <li>모빌리티 데이터 사업화 및 차량관제시스템(FMS) 구축 TF 참여 [cite: 35]</li>
+                <li>글로벌 배터리 시장 분석 및 북미 시장 진입 전략 수립 (2023) [cite: 40]</li>
+                <li>IGAW 데이터 사업 협력 체계 및 온라인 제약 플랫폼 전략적 제휴 구축 [cite: 35, 39]</li>
+            </ul>
+        </div>
+        <div class="item">
+            <span class="date">2018 - 2022</span>
+            <span class="main-title">CJ Logistics</span>
+            <span class="sub-title">Logistics Operations & Sales Specialist</span>
+            <ul class="details-list">
+                <li>이커머스(G마켓, 이마트) 영업관리 및 라스트마일 물류 운영 프로세스 고도화 [cite: 42, 43]</li>
+                <li>운영지표(KPI) 관리 및 서비스 안정화 프로세스 구축 [cite: 45]</li>
+            </ul>
+        </div>
+        <div class="item">
+            <span class="date">2016 - 2017</span>
+            <span class="main-title">TNS Global Logistics (Sydney, Australia)</span>
+            <span class="sub-title">Sea Freight Manager</span>
+            <ul class="details-list">
+                <li>End-to-End 오퍼레이션 및 특수화물(A.T.A Carnet) 프로젝트 수행 [cite: 50]</li>
+            </ul>
+        </div>
     </section>
 
     <section id="education">
         <h2>Education</h2>
-        <ul class="education-list">
-            <li class="education-item">
-                <span class="date">Mar 2024 – Present</span>
-                <span class="university">KAIST (Korea Advanced Institute of Science and Technology)</span><br>
-                <span class="role">MS in Information Management (IMMS)</span>
-                <ul class="details-list">
-                    <li>Focused areas: Supply Chain Analytics, Data-Driven Decision Making, Applied AI in Logistics.</li>
-                </ul>
-            </li>
-            <li class="education-item">
-                <span class="date">Feb 2016</span>
-                <span class="university">Kyungpook National University</span><br>
-                <span class="role">BS in Business Administration | Global Leadership Program</span>
-                <ul class="details-list">
-                    <li>Completed rigorous business administration curriculum with emphasis on strategic management and global business perspective.</li>
-                </ul>
-            </li>
-        </ul>
+        <div class="item">
+            <span class="date">2024. 08 - 2026. 08 (졸업 예정)</span>
+            <span class="main-title">KAIST (한국과학기술원)</span>
+            <span class="sub-title">Master of Science (MS) in Information Management</span>
+        </div>
+        <div class="item">
+            <span class="date">2011. 03 - 2017. 02</span>
+            <span class="main-title">광운대학교</span>
+            <span class="sub-title">Bachelor of Laws (LLB)</span>
+        </div>
     </section>
 
-    <section id="vision">
-        <h2>Vision & Technical Skills</h2>
-        <ul class="details-list">
-            <li><strong>Strategy & Operations:</strong> SCM Optimization, Investment Feasibility Analysis, KPI Development, Performance Management.</li>
-            <li><strong>Data & Analytics:</strong> Supply Chain Analytics, AI/ML application, Python, SQL, Tableau, Power BI.</li>
-            <li><strong>Core Vision:</strong> Bridging practical logistics experience with advanced technology (AI, data analytics) to design intelligent, autonomous supply chain networks (e.g., FMS, SDV integration).</li>
-        </ul>
+    <section id="skills">
+        <h2>Skills & Certifications</h2>
+        <div class="item">
+            <div class="skills-container">
+                <span class="skill-tag">사업개발</span> <span class="skill-tag">전략기획</span> <span class="skill-tag">모빌리티 데이터 사업화</span> 
+                <span class="skill-tag">영업관리</span> <span class="skill-tag">해상화물</span> <span class="skill-tag">Cross-industry Collaboration</span>
+            </div>
+            <div style="margin-top: 15px;">
+                <span class="cert-tag">SQLD</span> <span class="cert-tag">ADSP</span> 
+                <span class="cert-tag" style="background:#e8f5e9; color:#2e7d32;">Silicon Valley Tech Program 이수</span>
+            </div>
+        </div>
     </section>
 </div>
 
 <footer>
-    <div class="container" style="padding: 0; background:none; color:inherit;">
-        <p>© 2026 Seokbin Kang. Portfolio hosted on GitHub Pages.</p>
-    </div>
+    <p>© 2026 Seokbin Kang. Built with Strategy & Data.</p>
 </footer>
 
 </body>
