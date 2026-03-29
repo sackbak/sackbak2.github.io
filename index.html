@@ -185,6 +185,44 @@
             flex-shrink: 0;
         }
 
+        /* ===== MORE PROJECTS (DETAILS/SUMMARY) ===== */
+        .more-projects {
+            margin-top: 32px;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid #252525;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: border-color 0.3s ease;
+        }
+        .more-projects:hover { border-color: #333; }
+        .more-btn {
+            padding: 16px 24px;
+            font-size: 1.05em;
+            font-weight: 600;
+            color: #f0f0f0;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.2);
+            transition: background 0.3s;
+        }
+        .more-btn::-webkit-details-marker { display: none; }
+        .more-btn:hover { background: rgba(0,0,0,0.4); }
+        .more-btn::after {
+            content: '▼';
+            font-size: 0.9em;
+            color: #4a9eff;
+            transition: transform 0.3s ease;
+        }
+        details[open] .more-btn::after { transform: rotate(180deg); }
+        .more-content {
+            padding: 24px;
+            border-top: 1px solid #252525;
+            background: transparent;
+        }
+        
         /* ===== EXPERIENCE & EDUCATION ===== */
         .item {
             margin-bottom: 32px;
@@ -506,6 +544,73 @@
                 </div>
             </div>
         </div>
+
+        <!-- MORE PROJECTS -->
+        <details class="more-projects">
+            <summary class="more-btn">View Additional Projects</summary>
+            <div class="more-content">
+                <div class="item">
+                    <span class="date">2025.01 — Present</span>
+                    <span class="main-title">풀필먼트 패키징 광고 수익화 (CJ ENM)</span>
+                    <span class="sub-title">[Ad-tech / VAS] 배송 박스 매체화를 통한 고마진형 광고 수익모델 구축</span>
+                    <ul class="details-list">
+                        <li>물류수익 외 VAS사업발굴 기반 신규매출 창출</li>
+                        <li>대형 광고주 수주 (Disney, 보건복지부 등)</li>
+                        <li>고객 수주 시 마케팅 레버(Lever)로 활용</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <span class="date">2024.05 — 2024.10</span>
+                    <span class="main-title">헬스케어 물류 전략적 제휴 (바로팜)</span>
+                    <span class="sub-title">[Retail / SI] 의약품 유통 시장 진입을 위한 SI 투자 및 전략적 파트너십 체결</span>
+                    <ul class="details-list">
+                        <li>전략적 투자 연계한 비즈니스 파이프라인 구축 및 제휴 모델 설계</li>
+                        <li>사업 Vertical 확장 (헬스케어 물류 확대)</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <span class="date">2023.04 — 2023.08</span>
+                    <span class="main-title">배터리 물류 진입전략 수립 (내부TF)</span>
+                    <span class="sub-title">[Global Strategy / B2B] IRA 규제 대응 및 북미 내 물류 거점/운송망 구축</span>
+                    <ul class="details-list">
+                        <li>대형 배터리사(L, S사) 대규모 수주</li>
+                        <li>사내 배터리 전담 조직 신설 기여</li>
+                        <li>2차전지 밸류체인 레퍼런스 확보 (양극재 ~ 폐배터리 활용 등)</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <span class="date">2023.01 — 2023.06</span>
+                    <span class="main-title">IGAW 협력 데이터 마케팅 체계 구축 (IGAW)</span>
+                    <span class="sub-title">[Data Tech / DMP] 데이터 결합기반 협력모델 설계 및 광고운영 전략수립</span>
+                    <ul class="details-list">
+                        <li>소비자프로파일 X 송장데이터 등 데이터 결합 상품 기획</li>
+                        <li>전략적 파트너십(MoU) 체결</li>
+                        <li>타겟팅 기반 광고 매출 증대 (SSP 애드팝콘사)</li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+    </section>
+
+    <!-- PERSONAL PROJECT -->
+    <section id="personal-project" class="fade-in">
+        <h2>Personal Project</h2>
+        <a href="https://lois-fleet.vercel.app/" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+            <div class="project-card" style="display: flex; flex-direction: column; align-items: flex-start;">
+                <div class="project-content" style="padding: 30px; width: 100%;">
+                    <span class="project-tag" style="background: rgba(100,180,255,0.15); color: #6ab4ff; margin-bottom: 12px;">Development / FMS</span>
+                    <h3 class="project-title" style="font-size: 1.4em; margin-bottom: 12px;">Lois Fleet (FMS System)</h3>
+                    <p class="project-desc" style="color: #bbb; line-height: 1.8;">
+                        자체적으로 구축 중인 통합 Fleet Management System (FMS) 웹 어플리케이션입니다. 
+                        차량 관제, 예약 및 배차 관리 등 모빌리티 운영에 필요한 핵심 기능을 구현한 개인 프로젝트입니다.
+                    </p>
+                    <div style="margin-top: 18px; color: #4a9eff; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px;">
+                        <span>Go to Demo Website</span>
+                        <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;"><path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6a.996.996 0 10-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </a>
     </section>
 
     <!-- EDUCATION -->
